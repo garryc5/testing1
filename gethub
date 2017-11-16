@@ -1,0 +1,7 @@
+#!/bin/bash
+read -p "notes: " notes
+cp $1 ~/Projects/testing1/
+cd ~/Projects/testing1
+git add .
+git commit -m "$notes"
+git push -u origin master
